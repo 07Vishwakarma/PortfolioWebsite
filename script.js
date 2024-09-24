@@ -1,6 +1,6 @@
 gsap.to('.home .circle ',{
-    width: "150vw",
-    height: "150vw",
+    width: "190vw",
+    height: "190vw",
     duration: 0.5,
     zindex:99,
     scrollTrigger: {
@@ -16,7 +16,7 @@ gsap.to('.home .circle ',{
 
 gsap.to('.work h1',{
     // backgroundColor:'black',
-    transform:'translateX(-80%)',
+    transform:'translateX(-85%)',
     duration:1,
     scrollTrigger:{
         trigger:".work",

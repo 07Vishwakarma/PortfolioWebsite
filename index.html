@@ -7,33 +7,32 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="overflow-x-hidden  ">
+<body class="overflow-x-hidden ">
 
+<div class="w-full">
     <!-- cursor pointer right side -->
-    <div class="h-[88px] w-[88px] rounded-full border-4 cursor-pointer border-white flex justify-center items-center fixed top-[80%] left-[90%] z-[999]">
-        <!-- <h1> -->
+    <div class=" h-[88px] w-[88px] rounded-full border-4 cursor-pointer border-white flex justify-center items-center fixed top-[80%] left-[90%] z-[999]">
         <a href="#home"  class="h-full w-full flex justify-center items-center text-cyan-500 text-2xl font-mono border-black p-1 border-4 rounded-full">
             top
         </a>
-        <!-- </h1> -->
     </div>
 
-    <div id="home" class="home overflow-hidden h-screen flex justify-around items-center flex-col pt-[25px]"> 
+    <div id="home" class="home overflow-hidden h-screen flex justify-around items-center flex-col pt-[15px] sm:pt-[25px]"> 
         
-        <div class="nav flex justify-between relative w-full">
+        <div class="nav flex justify-between relative w-full sm:w-full ">
 
-            <h3 class="text-5xl pl-[99px] font-serif">PortFolioK</h3>
+            <h3 class="sm:text-5xl text-lg sm:pl-[99px] pr-[18px] font-serif">PortFolioK</h3>
             
-            <div class="nav-links pr-[99px] flex justify-around">
+            <div class="nav-links sm:pr-[99px] flex justify-around">
 
                 <div>
-                    <ul class="flex justify-center items-center gap-7 ">
-                        <li class="text-2xl font-serif ">
-                            <a href="#work" class="">Work</a>
+                    <ul class="flex justify-center items-center sm:gap-7 gap-2 ">
+                        <li class="text-base sm:text-xl font-serif ">
+                            <a href="#work" class="sm:text-2xl text-base">Work</a>
                         </li>
-                        <li class="text-2xl font-serif"><a href="#about">About</a></li>
-                        <li class="text-2xl font-serif"><a href="#contact">Contact</a></li>
-                        <li class=" resume  text-2xl font-serif "><a href="./portfolio.pdf">Resume</a></li>
+                        <li class="sm:text-2xl text-base font-serif"><a href="#about">About</a></li>
+                        <li class="sm:text-2xl text-base font-serif"><a href="#contact">Contact</a></li>
+                        <li class=" resume sm:text-2xl text-base font-serif "><a href="./updated.pdf">Resume</a></li>
                     </ul>
                 </div>
 
@@ -41,88 +40,97 @@
             
         </div>
         
-        <div class="circle  rounded-full  w-[0vw] h-[0vw]  absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2  bg-black flex justify-center items-center ">
-            <h1 class="text-white text-nowrap font-semibold font-serif text-9xl">Hello Anand </h1>
+        <div class="circle rounded-full w-[0vw] h-[0vw] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2  bg-black flex justify-center items-center ">
+            <h1 class="text-white text-nowrap  sm:font-semibold font-normal font-serif sm:text-9xl text-5xl">Hello Anand </h1>
         </div>
 
-        <h1 class="text text-9xl font-medium mt-[5%] mb-[4%] font-serif">Web developer</h1>
+        <h1 class="text text-5xl sm:text-9xl sm:font-medium sm:mt-[5%] sm:mb-[4%] font-serif">Web developer</h1>
 
     </div>
 
     <!-- About starts -->
-    <div class="about h-screen w-full bg-black z-[999]" id="about">
-        <div class="heading w-full font-medium text-[95px] text-white tracking-wide pl-[99px] pt-[55px] font-serif">
+    <div class="about h-fit sm:h-screen  bg-black z-[999]" id="about">
+
+        <div class="heading w-full font-normal sm:font-medium text-[55px] sm:text-[95px] text-white tracking-wide pl-[30px] sm:pl-[99px] pt-[25px] sm:pt-[55px] font-serif">
             About Me
         </div>
-        <div class="content text-left pl-[255px] w-[80%] text-white">
-            <p class="text-4xl font-medium font-serif leading-10 first-line:text-white text-gray-400 ">
+
+        <div class="content text-start sm:text-left pl-[4%] sm:pl-[255px] w-full sm:w-[80%] text-white">
+            <p class="text-2xl sm:text-4xl font-medium font-serif leading-10 first-line:text-white text-gray-400 ">
                 I am a web developer skilled in HTML, CSS, JavaScript, and modern frameworks. I create dynamic, user-friendly websites with responsive design, ensuring exceptional user experiences. Dedicated to continuous learning and staying current with industry trends.</p>
         </div>
     </div>
     <!-- About ends -->
 
-    <div class="photo relative bg-black pb-[5%]">
+    <!-- photo start here -->
+    <div class="photo relative bg-black pb-[2%] sm:pb-[5%]">
 
-        <div class="one rounded-[70px] flex items-center border-black ml-[5%] pt-[5%] overflow-hidden relative ">
-            <img src="images/imgone.avif" class="h-[550px] w-[450px] object-cover border-[3px] border-black rounded-[70px] ">
-            <h1 class="ml-[10%] static left-[10%]  font-medium  text-8xl text-white font-serif  ">
+        <div class="one rounded-[4px] sm:rounded-[70px] flex items-center border-black ml-[2%] sm:ml-[5%] pt-[2%] sm:pt-[5%] overflow-hidden relative ">
+
+            <img src="images/imgone.avif" class="h-[275px] sm:h-[550px] w-[205px] sm:w-[450px] object-cover border-[3px] border-black rounded-[10px] sm:rounded-[70px] ">
+            <h1 class="ml-[3%] sm:ml-[10%] static left-[5%] sm:left-[10%] font-light sm:font-medium text-4xl sm:text-8xl text-white font-serif ">
                 ART FULL <br> TRENDS
             </h1>
+
         </div>
         
-        <div class="one  rounded-[70px] flex items-center border-black overflow-hidden pt-[5%] relative">
-            <h1 class="ml-[5%] font-medium text-white text-8xl font-serif uppercase">
+        <div class="one rounded-[4px] sm:rounded-[70px] flex items-center border-black overflow-hidden pt-[2%] sm:pt-[5%] relative">
+            
+            <h1 class="ml-[2%] mr-[1%] sm:ml-[5%] font-light sm:font-medium text-white text-4xl sm:text-8xl font-serif uppercase">
                 Visionary <br> Vibe
             </h1>
-            <img src="images/imgtwo.avif"  class="h-[550px] w-[450px] object-cover ml-[10%] border-[3px] border-black rounded-[70px]">
+            <img src="images/imgtwo.avif"  class="h-[275px] sm:h-[550px] w-[205px] sm:w-[450px] object-cover mr-[5%] sm:mr-[10%]  border-[3px] border-black rounded-[10px] sm:rounded-[70px]">
         </div>
         
-        <div class="one  rounded-[70px] flex items-center border-black ml-[5%] overflow-hidden pt-[5%] relative">
-            <img src="images/imgthree.avif" class="h-[550px] w-[450px] object-cover border-[3px] border-black rounded-[70px]">
-            <h1 class="ml-[5%] static left-[10%]  font-medium text-white text-8xl font-serif uppercase">
+        <div class="one rounded-[4px] sm:rounded-[70px] flex items-center border-black ml-[5%] overflow-hidden pt-[2%] sm:pt-[5%] relative">
+
+            <img src="images/imgthree.avif" class="h-[275px] sm:h-[550px] w-[205px] sm:w-[450px] object-cover border-[3px] border-black rounded-[10px] sm:rounded-[70px] ">
+            <h1 class="ml-[3%] sm:ml-[10%] static left-[5%] sm:left-[10%] font-light sm:font-medium text-4xl sm:text-8xl text-white font-serif ">
                 technology <br> enthusiast
             </h1>
         </div>
         
-        <div class="one  rounded-[70px] flex items-center border-black overflow-hidden pt-[5%] relative">
-            <h1 class="ml-[3%] font-medium text-white text-8xl font-serif uppercase">
-                Technophile
+
+        <div class="one rounded-[4px] sm:rounded-[70px] flex items-center border-black overflow-hidden sm-[2%] sm:pt-[5%] relative">
+
+            <h1 class="ml-[2%] sm:ml-[5%] font-light sm:font-medium text-white text-4xl sm:text-8xl font-serif uppercase">
+                gearhead
             </h1>
-            <img src="images/imgfour.avif"  class="h-[550px] w-[400px] object-cover ml-[5%] border-[3px] border-black rounded-[70px]">
+            <img src="images/imgfour.avif"  class="h-[275px] sm:h-[550px] w-[205px] sm:w-[450px] object-cover mr-[5%] sm:mr-[10%]  border-[3px] border-black rounded-[10px] sm:rounded-[70px]">
         </div>
 
     </div>
 
-    <div class="work h-screen flex justify-center flex-col pt-16" id="work">
+    <div class="work h-fit sm:h-screen flex sm:justify-center flex-col pt-8 sm:pt-16 overflow-hidden" id="work">
         
-        <h1  class=" font-normal text-[600px] font-serif pl-[9%] ">
+        <h1  class=" font-normal text-[350px] sm:text-[400px] font-serif pr-[99px] pl-[12%] sm:pl-[9%] ">
             WORK
         </h1>
         
     </div>
 
-    <div class="skill flex flex-col bg-black rounded-[55px]">
+    <div class="skill flex flex-col bg-black rounded-[33px] sm:rounded-[55px]">
         
-        <h1 class="font-serif text-7xl w-auto m-auto mt-6 text-white">
+        <h1 class="font-serif text-5xl sm:text-7xl w-auto m-auto mt-6 text-white">
             Skill
         </h1>
         
         <div class="skill-bubble ">
         
-            <div class="one h-60 w-60 rounded-full bg-green-300 border-3 ml-[12%] flex justify-center items-center ">
-                <h1 class="font-serif text-white text-4xl font-medium whitespace-nowrap">Web Development</h1>
+            <div class="one h-32 sm:h-60 w-32 sm:w-60 rounded-full bg-green-300 border-3 ml-[9%] sm:ml-[12%] flex justify-center items-center ">
+                <h1 class="font-serif text-white text-2xl sm:text-4xl font-medium whitespace-nowrap">Web Development</h1>
             </div>
 
-            <div class="one h-72 w-72 rounded-full bg-red-300 border-3 ml-[55%] flex justify-center items-center">
-                <h1 class="font-serif text-5xl text-white font-medium whitespace-nowrap">Critical Thinking</h1>
+            <div class="one h-36 sm:h-72 w-36 sm:w-72 rounded-full bg-red-300 border-3 ml-[45%] sm:ml-[55%] flex justify-center items-center">
+                <h1 class="font-serif text-2xl sm:text-5xl text-white font-medium whitespace-nowrap">Critical Thinking</h1>
             </div>
 
-            <div class="one h-96 w-96 rounded-full bg-pink-300 border-3 ml-[19%] flex justify-center items-center">
-                <h1 class="font-serif text-6xl text-white font-medium whitespace-nowrap">Problem Solving</h1>
+            <div class="one h-52 sm:h-96 w-52 sm:w-96 rounded-full bg-pink-300 border-3 ml-[9%] sm:ml-[19%] flex justify-center items-center">
+                <h1 class="font-serif text-2xl sm:text-6xl text-white font-medium whitespace-nowrap">Problem Solving</h1>
             </div>
 
-            <div class="one h-96 w-96 rounded-full bg-orange-300 border-3 ml-[55%] flex justify-center items-center">
-                <h1 class="font-serif text-7xl font-medium text-white whitespace-nowrap">Android Development</h1>
+            <div class="one h-56 sm:h-96 w-56 sm:w-96 rounded-full bg-orange-300 border-3 ml-[45%] sm:ml-[55%] flex justify-center items-center">
+                <h1 class="font-serif text-[27px] sm:text-7xl font-medium text-white whitespace-nowrap">Android Development</h1>
             </div>
         
         </div>
@@ -130,60 +138,60 @@
     </div>
 
     <div class="services flex items-center justify-center flex-col rounded-[55px] bg-gray-200 ">
-        <h1 class=" text-[222px] font-medium font-serif" >Services</h1>
+        <h1 class="text-[111px] sm:text-[222px] font-medium font-serif" >Services</h1>
 
         <div class="box border-4 border-cyan-400  flex m-7 rounded-2xl">
-            <div class="title border-4 rounded-2xl w-[50%] flex items-center justify-center text-5xl font-medium bg-gray-300">
+            <div class="title border-4 rounded-2xl w-[50%] flex items-center justify-center text-2xl sm:text-5xl font-medium bg-gray-300">
                 full Stack developer
             </div>
-            <div class="description border-4 w-[50%] pt-6 pb-6 pl-7 pr-7 font-normal text-lg rounded-2xl m-3">
+            <div class="description border-4 w-[50%] sm:pt-6 sm:pb-6 sm:pl-7 sm:pr-7 font-normal sm:text-lg rounded-2xl m-3">
                 Web development is the art of turning ideas into interactive and dynamic experiences. It bridges the gap between creativity and functionality, transforming visions into accessible realities that connect, inform, and engage users around the globe. In web development, every line of code is a step towards building a more connected and innovative world
             </div>
         </div>
 
         <div class="box border-4 border-cyan-400  flex m-7 rounded-2xl">
-            <div class="title border-4 rounded-2xl w-[50%] flex items-center justify-center text-5xl font-medium bg-gray-300">
+            <div class="title border-4 rounded-2xl w-[50%] flex items-center justify-center text-2xl sm:text-5xl font-medium bg-gray-300">
                 Android development
             </div>
-            <div class="description border-4 w-[50%] pt-6 pb-6 pl-7 pr-7 font-normal text-lg rounded-2xl m-3">
+            <div class="description border-4 w-[50%] sm:pt-6 sm:pb-6 sm:pl-7 sm:pr-7 font-normal sm:text-lg rounded-2xl m-3">
                 Android development is more than just building apps; it's about creating seamless and intuitive mobile experiences that enrich the lives of users. By combining creativity with cutting-edge technology, Android developers have the power to transform innovative ideas into powerful tools that fit in the palm of your hand.
             </div>
         </div>
 
         <div class="box border-4 border-cyan-400  flex m-7 rounded-2xl">
-            <div class="title border-4 rounded-2xl w-[50%] flex items-center justify-center text-5xl font-medium bg-gray-300">
+            <div class="title border-4 rounded-2xl w-[50%] flex items-center justify-center text-2xl sm:text-5xl font-medium bg-gray-300">
                 Animation
             </div>
-            <div class="description border-4 w-[50%] pt-6 pb-6 pl-7 pr-7 font-normal text-lg rounded-2xl m-3">
+            <div class="description border-4 w-[50%] sm:pt-6 sm:pb-6 sm:pl-7 sm:pr-7 font-normal sm:text-lg rounded-2xl m-3">
                 Animation in web development breathes life into digital experiences, turning static pages into dynamic storytelling canvases. It captivates users, guides their interactions, and enhances usability by adding a layer of visual delight and intuitive flow. Through animation, web developers can create immersive and engaging journeys that leave lasting impressions.
             </div>
         </div>
 
     </div>
 
-    <div class="contact bg-gray-200  pb-[3%] flex justify-between items-center flex-col rounded-[55px]" id="contact">
+    <div class="contact bg-gray-200  sm:pb-[3%] flex justify-between items-center flex-col rounded-[55px]" id="contact">
         
-            <h2 class="w-full text-8xl font-semibold font-sans rounded-full p-[24px] flex justify-center">
+            <h2 class="w-full text-3xl sm:text-8xl font-semibold font-sans rounded-full p-[14px] sm:p-[24px] flex justify-center">
                 Social Media
             </h2>
 
         <!-- <div class="linkedn h-[99px]  flex flex-col justify-center pl-[15%]"> -->
-            <h1 class="text-6xl font-semibold font-serif ml-[12%] ">
+            <h1 class="text-3xl sm:text-6xl sm:font-semibold font-serif sm:ml-[12%] ">
                 <a href="https://www.linkedin.com/in/anand-vishwakarma-26a33b251?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Linkedin</a>
             </h1>
         <!-- </div> -->
-            <br><br>
+            <br>
         <!-- <div class="github h-[99px]  flex flex-col justify-center pl-[15%] "> -->
-            <h1 class="text-6xl font-semibold font-serif ml-[12%] ">
+            <h1 class="text-3xl sm:text-6xl sm:font-semibold font-serif sm:ml-[12%] ">
                 <a href="https://github.com/07Vishwakarma">GitHub</a>
             </h1>
             <br> <br>
         <!-- </div> -->
-            <h1 class="w-full email ml-[12%] relative flex justify-center items-center flex-col">
-                 <a class=" text-6xl font-semibold font-serif "> Email </a>
+            <h1 class="sm:w-full email sm:ml-[12%] relative flex justify-center items-center flex-col">
+                 <h1 class="text-3xl sm:text-6xl sm:font-semibold font-serif "> Email </h1>
                 <br>
 
-                <form action="https://api.web3forms.com/submit" method="POST" class="w-[80%] flex justify-center items-center flex-col border-2 border-black text-white rounded-[44px]">
+                <form action="https://api.web3forms.com/submit" method="POST" class="sm:w-[80%] h-screen sm:flex sm:justify-center sm:items-center sm:flex-col border-2 border-black text-white rounded-[22px] sm:rounded-[44px]">
 
                     <input type="hidden" name="access_key" value="48c59e8d-0841-4212-a53c-fa17258e2d3b">
 
@@ -200,7 +208,7 @@
 
         
     </div>
-
+</div>
     <!-- </div> -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
